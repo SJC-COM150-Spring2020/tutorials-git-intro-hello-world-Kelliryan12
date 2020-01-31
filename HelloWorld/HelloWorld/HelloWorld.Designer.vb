@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class HelloWorld
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,10 @@ Partial Class HelloWorld
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnPress = New System.Windows.Forms.Button()
+        Me.lstHello = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'btnPress
@@ -31,12 +32,25 @@ Partial Class HelloWorld
         Me.btnPress.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPress.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPress.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnPress.Location = New System.Drawing.Point(221, 242)
+        Me.btnPress.Location = New System.Drawing.Point(219, 227)
         Me.btnPress.Name = "btnPress"
         Me.btnPress.Size = New System.Drawing.Size(248, 63)
         Me.btnPress.TabIndex = 0
         Me.btnPress.Text = "Press Me!"
         Me.btnPress.UseVisualStyleBackColor = False
+        '
+        'lstHello
+        '
+        Me.lstHello.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.lstHello.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lstHello.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstHello.ForeColor = System.Drawing.Color.Black
+        Me.lstHello.FormattingEnabled = True
+        Me.lstHello.ItemHeight = 22
+        Me.lstHello.Location = New System.Drawing.Point(219, 319)
+        Me.lstHello.Name = "lstHello"
+        Me.lstHello.Size = New System.Drawing.Size(248, 156)
+        Me.lstHello.TabIndex = 1
         '
         'HelloWorld
         '
@@ -44,6 +58,7 @@ Partial Class HelloWorld
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SkyBlue
         Me.ClientSize = New System.Drawing.Size(698, 577)
+        Me.Controls.Add(Me.lstHello)
         Me.Controls.Add(Me.btnPress)
         Me.Name = "HelloWorld"
         Me.Text = "Hello"
@@ -52,4 +67,5 @@ Partial Class HelloWorld
     End Sub
 
     Friend WithEvents btnPress As Button
+    Friend WithEvents lstHello As ListBox
 End Class
